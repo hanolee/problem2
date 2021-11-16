@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import DynamicComponents from './components/DynamicComponents';
+import { num, setOfTx, limitOfTx } from './problem1';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Problem1 데이터 가져오기</h1>
+      <DynamicComponents num = {num} setOfTx = {setOfTx} limitOfTx = {limitOfTx}></DynamicComponents>
     </div>
   );
 }
+
 
 export default App;
